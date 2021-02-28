@@ -1,5 +1,5 @@
 .overlay {
-  background: rgba(242, 243, 245, 0.8);
+  background: var(--modal-overlay);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -12,7 +12,7 @@
 }
 
 .container {
-  background: var(--white);
+  background: var(--secondary-color);
 
   position: relative;
   width: 100%;

@@ -1,7 +1,7 @@
 .challengeBoxContainer {
   height: 100%;
 
-  background: var(--white);
+  background: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   padding: 1.5rem 2rem;
@@ -12,6 +12,8 @@
   justify-content: center;
 
   text-align: center;
+
+  transition: background var(--theme-delay) ease;
 }
 
 .challengeNotActive {
@@ -67,6 +69,8 @@
   font-weight: 600;
   color: var(--title);
   margin: 1.5rem 0 1rem;
+
+  transition: color var(--theme-delay) ease;
 }
 
 .challengeActive main p {
@@ -94,7 +98,7 @@
   font-size: 1rem;
   font-weight: 600;
 
-  transition: filter 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .challengeActive footer .challengeFailedButton {

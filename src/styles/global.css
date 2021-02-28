@@ -1,15 +1,30 @@
 :root {
   --white: #fff;
-  --background: #F2F3F5;
   --gray-line: #DCDDE0;
-  --text: #666;
-  --text-highlight: #B3B9FF;
-  -title: #2E384D;
   --red: #E83F5B;
   --green: #4CD62B;
   --blue: #5965E0;
   --blue-dark: #4953B8;
   --blue-twitter: #2AA9E0;
+  
+  --background: #F2F3F5;
+  --title: #2E384D;
+  --text: #666;
+  --text-highlight: #B3B9FF;
+  --secondary-color: var(--white);
+  --countdow-active-bg: var(--white);
+  --modal-overlay: rgba(242, 243, 245, 0.8);
+
+  --theme-delay: 0.25s
+}
+
+[data-theme="dark"] {
+  --background: #212529;
+  --secondary-color: #2E3236;
+  --title: var(--white);
+  --text: #EEEEEE;
+  --countdow-active-bg: var(--secondary-color);
+  --modal-overlay: rgba(33, 37, 41, 0.8);
 }
 
 @media (max-width: 1080px) {
@@ -33,6 +48,7 @@
 body {
   background: var(--background);
   color: var(--text);
+  transition: all var(--theme-delay) ease;
   
   font-family: 'Inter', sans-serif;
 }
