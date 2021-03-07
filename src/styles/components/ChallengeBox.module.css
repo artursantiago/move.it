@@ -3,7 +3,7 @@
 
   background: var(--secondary-color);
   border-radius: 5px;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--box-shadow);
   padding: 1.5rem 2rem;
 
   display: flex;
@@ -13,7 +13,8 @@
 
   text-align: center;
 
-  transition: background var(--theme-delay) ease;
+  transition: background var(--theme-delay) ease,
+              box-shadow var(--theme-delay) ease;
 }
 
 .challengeNotActive {

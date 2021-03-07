@@ -15,7 +15,8 @@
   --countdow-active-bg: var(--white);
   --modal-overlay: rgba(242, 243, 245, 0.8);
 
-  --theme-delay: 0.25s
+  --theme-delay: 0.25s;
+  --box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="dark"] {
@@ -25,6 +26,7 @@
   --text: #EEEEEE;
   --countdow-active-bg: var(--secondary-color);
   --modal-overlay: rgba(33, 37, 41, 0.8);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
 
 @media (max-width: 1080px) {
