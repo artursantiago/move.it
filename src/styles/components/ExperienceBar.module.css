@@ -15,16 +15,59 @@
   margin: 0 1.5rem;
 
   position: relative;
+  transition: height 0.2s ease;
+}
+
+.experienceBar > div:hover {
+  height: 8px;
 }
 
 .experienceBar > div div {
-  height: 4px;
+  height: 100%;
   border-radius: 4px;
   background: var(--green);
 }
+
 
 span.currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
+
+  height: 0px;
+  padding: 0rem;
+  font-size: 0;
+
+  border-radius: 4px;
+  white-space: nowrap;
+  background: var(--green);
+
+  transition: all 0.2s ease;
+}
+
+span.currentExperience::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-left: 0px solid transparent;
+  border-bottom: 0px solid var(--green);
+  border-right: 0px solid transparent;
+  border-top: 0px solid transparent;
+
+  transition: all 0.2s ease;
+}
+
+.experienceBar > div:hover span.currentExperience {
+  height: 36px;
+  padding: 0.5rem;
+  font-size: initial;
+}
+
+.experienceBar > div:hover span.currentExperience::before {
+  top: -6px;
+  border-width: 6px;
+  border-top-width: 0px;
 }
